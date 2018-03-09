@@ -27,6 +27,6 @@ You can probably come up with a better way of doing it. (I'm happy to accept PRs
 
 ## Licence
 
-This code is provided under the MIT licence. The software and gems it depends on may have different licence terms; please check before installing or distributing.
+This code is provided under the [MIT licence](LICENSE). The software and gems it depends on may have different licence terms; please check before installing or distributing.
 
 &copy; 2018 [Skylar MacDonald](https://skylarmacdonald.com)
