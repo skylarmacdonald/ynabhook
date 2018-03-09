@@ -14,6 +14,7 @@ class YNABHook < Sinatra::Base
     if payload['type'] == 'transaction.created'
       uri = URI.parse("https://api.youneedabudget.com/v1/budgets/#{ENV['BUDGET_ID']}/transactions")
       http = Net::HTTP.new(uri.host, uri.port)
+      http.use_ssl = true
       txn = {
         "transaction": {
           "account_id": ENV['MONZO_ACCOUNT_ID'],
