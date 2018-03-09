@@ -32,6 +32,7 @@ class YNABHook < Sinatra::Base
       request = Net::HTTP::Post.new(uri.request_uri, header)
       request.body = txn.to_json
       response = http.request(request)
+      'Thanks'
     else
       'OK'
     end
