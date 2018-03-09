@@ -7,7 +7,7 @@ require 'json'
 require 'date'
 
 class YNABHook < Sinatra::Base
-  header = {'Content-Type': 'text/json', 'Authorization': "Bearer #{ENV['YNAB_KEY']}"}
+  header = {'Content-Type': 'application/json', 'Authorization': "Bearer #{ENV['YNAB_KEY']}"}
 
   post '/monzo' do
     payload = JSON.parse(request.body.read)
