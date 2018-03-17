@@ -1,6 +1,6 @@
 require 'rubygems'
 require 'sinatra/base'
-require 'dotenv'
+require 'dotenv/load'
 require 'net/http'
 require 'uri'
 require 'json'
